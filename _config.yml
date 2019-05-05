@@ -79,19 +79,19 @@ license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4
 
 ## TOC
 toc:
-  selectors:  "h1,h2,h3" 
+  selectors: "h1,h2,h3"
 
 
 ## => Markdown Enhancements
 ##############################
-## Mathjax
+# Mathjax
 mathjax: true
 mathjax_autoNumber: true
 
-## Mermaid
+# Mermaid
 mermaid: true
 
-## Chart
+# Chart
 chart: true
 
 
