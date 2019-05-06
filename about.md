@@ -8,42 +8,33 @@ titles:
 key: page-about
 ---
 
-------
+### Intro
+
+*中国科学技术大学——软件工程研究生
+
+*语言：C++/Python
+
+*想做安全的一个菜鸟
 
 
 
-# Intro
-
-- 中国科学技术大学——软件工程研究生
-- 语言：C++/Python
-- 想做安全的一个菜鸟
-
-------
-
-
-
-# Projects
+### Projects
 
 
 
 
 
-------
+
+
+### Experience
+
+*中科院空天院：Linux平台研发
 
 
 
-# Experience
+### Contact
 
-- 中科院空天院：Linux平台研发
+*邮箱：<caiafun@foxmail.com>
 
-------
-
-
-
-# Contact
-
-- 邮箱：[caiafun@foxmail.com](caiafun@foxmail.com)
-- GitHub：[https://github.com/ustc-fun](https://github.com/ustc-fun)
-
-------
+*GitHub：[https://github.com/ustc-fun](https://github.com/ustc-fun)
 
