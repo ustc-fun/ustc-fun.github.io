@@ -8,14 +8,16 @@ titles:
 key: page-about
 ---
 
+#  
+
 ### Intro
 
 ```
-- 中国科学技术大学——软件工程研究生
+中国科学技术大学——软件工程研究生
 
-- 语言：C++/Python
+语言：C++/Python
 
-- 想做安全的一个菜鸟
+想做安全的一个菜鸟
 ```
 
 
@@ -31,7 +33,7 @@ key: page-about
 ### Experience
 
 ```
-- 中科院空天院：Linux平台研发
+中科院空天院：Linux平台研发
 ```
 
 
@@ -39,10 +41,8 @@ key: page-about
 ### Contact
 
 ```
-- 邮箱：<caiafun@foxmail.com>
+邮箱：caiafun@foxmail.com
 
-- GitHub：[https://github.com/ustc-fun
+GitHub：https://github.com/ustc-fun
 ```
-
-](https://github.com/ustc-fun)
 
