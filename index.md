@@ -5,5 +5,7 @@ titles:
   zh      : *ZH_HANS
   zh-CN   : *ZH_HANS
   zh-SG   : *ZH_HANS
-key: page-home
+articles:
+  type: normal
+  excerpt_type: html
 ---
