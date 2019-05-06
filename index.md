@@ -7,4 +7,3 @@ titles:
   zh-SG   : *ZH_HANS
 key: page-home
 ---
-tets
