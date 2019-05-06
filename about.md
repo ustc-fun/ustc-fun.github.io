@@ -5,7 +5,6 @@ titles:
   zh      : *ZH_HANS
   zh-CN   : *ZH_HANS
   zh-SG   : *ZH_HANS
-title: caia — 菜啊
 key: page-about
 ---
 
