@@ -80,9 +80,7 @@ tags: Ransomware
 
 ## 1、加密方式
 
-```
-勒索病毒使用了RSA+AES加密方式，加密过程中涉及两对RSA密钥(分别为黑客公私钥和用户公私钥，分别用hacker_rsa_xxx和user_rsa_xxx表示这两对密钥)和一对AES密钥。黑客RSA密钥用于加密用户RSA密钥，用户RSA密钥用于加密AES密钥，AES密钥用于加密文件内容。具体的加密过程为：勒索病毒首先解码出一个内置的RSA公钥(hacker_rsa_pub)，同时对每个受害用户，使用RSA生成公私钥（user_rsa_pub和user_rsa_pri），其中生成的密钥信息使用内置的RSA公钥(hacker_rsa_Public)进行加密后，做为用户ID。在遍历系统文件，对符合加密要求的文件进行加密。对每个文件，通过CoCreateGuid生成一个唯一标识符，并由该唯一标识符最终生成AES密钥(记为file_aes_key)，对文件进行加密。在加密文件的过程中，该唯一标识符会通过RSA公钥 (user_rsa_pub) 加密后保存到文件中。黑客在收到赎金、用户ID和文件后，通过自己的私钥(hacker_rsa_pri)解密用户ID,可以得到user_rsa_pri，使用user_rsa_pri解密文件，就可以得到文件的file_aes_key，进而可以通过AES算法解密出原始文件。
-```
+> 勒索病毒使用了RSA+AES加密方式，加密过程中涉及两对RSA密钥(分别为黑客公私钥和用户公私钥，分别用hacker_rsa_xxx和user_rsa_xxx表示这两对密钥)和一对AES密钥。黑客RSA密钥用于加密用户RSA密钥，用户RSA密钥用于加密AES密钥，AES密钥用于加密文件内容。具体的加密过程为：勒索病毒首先解码出一个内置的RSA公钥(hacker_rsa_pub)，同时对每个受害用户，使用RSA生成公私钥（user_rsa_pub和user_rsa_pri），其中生成的密钥信息使用内置的RSA公钥(hacker_rsa_Public)进行加密后，做为用户ID。在遍历系统文件，对符合加密要求的文件进行加密。对每个文件，通过CoCreateGuid生成一个唯一标识符，并由该唯一标识符最终生成AES密钥(记为file_aes_key)，对文件进行加密。在加密文件的过程中，该唯一标识符会通过RSA公钥 (user_rsa_pub) 加密后保存到文件中。黑客在收到赎金、用户ID和文件后，通过自己的私钥(hacker_rsa_pri)解密用户ID,可以得到user_rsa_pri，使用user_rsa_pri解密文件，就可以得到文件的file_aes_key，进而可以通过AES算法解密出原始文件。
 
 
 
